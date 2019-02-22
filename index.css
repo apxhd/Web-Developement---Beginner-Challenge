@@ -1,0 +1,117 @@
+html{
+    font-family: Helvetica, sans-serif;
+
+}
+header{
+    /* border: 2px solid; */
+    /* margin : auto; */
+    height: 70px;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    padding-left : 10px;
+    position : relative;
+}
+
+header>h2>span{
+    color: orange;
+    font-size: 50px;
+    position: absolute;
+    top: -15px;;
+}
+
+header>h2{
+    position: relative;
+    top:22px;
+    width: 100px;
+}
+
+
+nav{
+    /* border: 2px solid; */
+    /* margin : 10px; */
+    padding: 15px 1px;
+    background-color: rgb(83, 83, 83);
+}
+
+nav>a{
+    padding: 14px;
+    color : white;
+    height : 100px;
+
+}
+
+nav>a:link{
+    text-decoration: none;
+    background-color:  rgb(54, 54, 54);
+}
+
+.main{
+    width:850px;
+}
+
+.section1, .section2, .section3{
+    margin : auto;
+    padding: 15px 1px;
+    width : 800px;
+    position: relative;
+}
+
+.sidebarup, .sidebardown{
+    margin : auto;
+    margin-top: 45px;
+    padding: 15px 1px;
+    width : 300px;
+    position: relative;
+}
+
+.content{
+    width : 500px;
+    position: absolute;
+    top :40px;
+    right :40px;
+
+}
+
+.sidebar{
+    width: 450px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top : 0;
+    background-color: rgba(48, 48, 48, 0.1)
+}
+
+.sidebarlinks{
+    text-decoration: none;
+    color : orange;
+
+}
+
+.sidebarlinks>a{
+    text-decoration: none;
+    color : orange;
+}
+
+footer{
+    border : 2px solid;
+    padding-left:30px;
+    text-align: center;
+    background-color: rgb(54, 54, 54);
+    color : white;
+
+}
+
+footer>p>span{
+    color: orange;
+}
+
+
+.main-body{
+    position: relative;
+}
+
+img{
+    width:  200px;
+    height: 200px;
+    margin: 10px;
+}
