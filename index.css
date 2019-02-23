@@ -3,63 +3,64 @@ html{
 
 }
 header{
-    height: 150%;
+    height: 50%;
     background-color: rgb(54, 54, 54);
     color: white;
-    padding-left : 2%;
-    padding-bottom: 2%;
-    position : relative;
+
 }
 
-header>h2>span{
+header h2{
+    top : 7px;
+    position: relative;
+    width: 100%;
+    font-size: 30px;
+    margin-left : 10px;
+}
+
+header h2 span{
+    top : 9px;
     color: orange;
     font-size: 200%;
-    position: absolute;
-    top: 5%;
-    bottom: 100%;
-}
-
-header>h2{
     position: relative;
-    top:22px;
-    width: 100%;
 }
-
 
 nav{
-
-    padding: 15px 1px;
+    width : 100%;
+    height: 40px;
     background-color: rgb(83, 83, 83);
 }
 
-nav>a{
-    padding: 14px;
+nav a{
+    padding: 10px;
     color : white;
-    height : 100%;
-    width: auto;
-
+    width: inherit;
+    height: inherit;
+    position: relative;
+    top : 10px;
 }
 
-nav>a:link{
+a:link{
     text-decoration: none;
+}
+
+nav a:hover{
     background-color:  rgb(54, 54, 54);
+    cursor: pointer;
+    transition: background-color .5s;
 }
 
 .main-body{
-    outline: 2px solid blue;
     position: relative;
     padding : 1%;
 }
 
 .main{
-    outline: 2px solid red;
     padding : 1%;
     width:60%;
 }
 
 
 .sidebar{
-    outline: 2px solid red;
     width: 30%;
     height: 100%;
     position: absolute;
@@ -69,7 +70,6 @@ nav>a:link{
 }
 
 .section1, .section2, .section3{
-    outline: 2PX SOLID;
     margin : auto;
     padding: 15px 1px;
     width : 100%;
@@ -78,7 +78,6 @@ nav>a:link{
 }
 
 .content{
-    outline: 2px solid;
     width : 60%;
     height: auto;
     position: absolute;
@@ -90,47 +89,49 @@ nav>a:link{
 }
 
 .sidebarup, .sidebardown{
-    outline: 2px solid;
     margin : auto;
     margin-top: 45px;
     padding: 15px 1px;
     width : 75%;
 }
 
-
-
-
 .sidebarlinks{
-    text-decoration: none;
     color : orange;
 
 }
 
-.sidebarlinks>a{
-    text-decoration: none;
+.sidebarlinks a{
     color : orange;
 }
 
 footer{
-    border : 2px solid;
     padding-left:30px;
     text-align: center;
     background-color: rgb(54, 54, 54);
     color : white;
+    height: 40px;
 
 }
 
-footer>p>span{
+footer p{
+    position: relative; 
+    top:11px;
+}
+
+footer p span{
     color: orange;
 }
-
-
-
 
 img{
     width:  25%;
     height: auto;
     margin: 10px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.20);
+}
+
+img:hover{
+    transform: scale(1.1);
+    transition: transform .5s;
 }
 
 @media only screen and (max-width: 768px)
@@ -141,6 +142,7 @@ img{
     }
     .sidebar{
         width: 100%;
-        position: relative;
+        position: static;
     }
+
 }
