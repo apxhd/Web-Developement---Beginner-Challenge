@@ -3,32 +3,31 @@ html{
 
 }
 header{
-    /* border: 2px solid; */
-    /* margin : auto; */
-    height: 70px;
+    height: 150%;
     background-color: rgb(54, 54, 54);
     color: white;
-    padding-left : 10px;
+    padding-left : 2%;
+    padding-bottom: 2%;
     position : relative;
 }
 
 header>h2>span{
     color: orange;
-    font-size: 50px;
+    font-size: 200%;
     position: absolute;
-    top: -15px;;
+    top: 5%;
+    bottom: 100%;
 }
 
 header>h2{
     position: relative;
     top:22px;
-    width: 100px;
+    width: 100%;
 }
 
 
 nav{
-    /* border: 2px solid; */
-    /* margin : 10px; */
+
     padding: 15px 1px;
     background-color: rgb(83, 83, 83);
 }
@@ -36,7 +35,8 @@ nav{
 nav>a{
     padding: 14px;
     color : white;
-    height : 100px;
+    height : 100%;
+    width: auto;
 
 }
 
@@ -45,41 +45,60 @@ nav>a:link{
     background-color:  rgb(54, 54, 54);
 }
 
+.main-body{
+    outline: 2px solid blue;
+    position: relative;
+    padding : 1%;
+}
+
 .main{
-    width:850px;
+    outline: 2px solid red;
+    padding : 1%;
+    width:60%;
+}
+
+
+.sidebar{
+    outline: 2px solid red;
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    right: 1%;
+    top : 1%;
+    background-color: rgba(48, 48, 48, 0.1)
 }
 
 .section1, .section2, .section3{
+    outline: 2PX SOLID;
     margin : auto;
     padding: 15px 1px;
-    width : 800px;
-    position: relative;
-}
-
-.sidebarup, .sidebardown{
-    margin : auto;
-    margin-top: 45px;
-    padding: 15px 1px;
-    width : 300px;
+    width : 100%;
+    height: auto;
     position: relative;
 }
 
 .content{
-    width : 500px;
+    outline: 2px solid;
+    width : 60%;
+    height: auto;
     position: absolute;
-    top :40px;
-    right :40px;
+    top :15%;
+    right :5%;
+    bottom: 15%;
+    overflow: hidden;
 
 }
 
-.sidebar{
-    width: 450px;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top : 0;
-    background-color: rgba(48, 48, 48, 0.1)
+.sidebarup, .sidebardown{
+    outline: 2px solid;
+    margin : auto;
+    margin-top: 45px;
+    padding: 15px 1px;
+    width : 75%;
 }
+
+
+
 
 .sidebarlinks{
     text-decoration: none;
@@ -106,12 +125,22 @@ footer>p>span{
 }
 
 
-.main-body{
-    position: relative;
-}
+
 
 img{
-    width:  200px;
-    height: 200px;
+    width:  25%;
+    height: auto;
     margin: 10px;
+}
+
+@media only screen and (max-width: 768px)
+{
+    .main{
+        width: 100%;
+        posiiton: relative;
+    }
+    .sidebar{
+        width: 100%;
+        position: relative;
+    }
 }
